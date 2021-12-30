@@ -29,7 +29,7 @@ jobs:
           check-latest: true
       - run: npm install
       - run: npm run build
-      - uses: testca01/s3-sync-action@main
+      - uses: Coder-Vishali/s3-sync-action@main
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
